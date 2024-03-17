@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>you should...</title>
+    <style>
+        #img {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <img id="img" src="image.png"/>
+    <script>
+        const img = document.getElementById("img");
+        const evilChance = 1/100;
+        const random = Math.floor(Math.random()/evilChance);
+
+        if (random == 0) {
+            img.src = "evilimage.jfif"
+        }
+    </script>
+</body>
+</html>
